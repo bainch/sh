@@ -1,0 +1,3 @@
+#!/bin/bash
+rm .bash_profile
+ln -s sh/bash_profile .bash_profile
