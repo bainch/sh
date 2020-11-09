@@ -70,3 +70,4 @@ shopt -s checkwinsize
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias cpuinfo='sysctl -n machdep.cpu.brand_string'
 alias ssh='ssh -A'
+alias shell-update='git -C ~/sh pull'
