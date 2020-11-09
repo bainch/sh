@@ -29,11 +29,24 @@ HISTIGNORE=${HISTIGNORE}':%1:%2:popd:top:pine:mutt:shutdown*'
 export HISTIGNORE
 
 if [ "$USER" = "root" ]; then
+        USRCOL="\[\033[0;31m\]"
+        USRPROMPTSIGN="\[\033[0;31m\]#"
+else
+        USRCOL="\[\033[0;32m\]"
+        USRPROMPTSIGN="\[\033[0;32m\]>"
+fi
+
+
+if [ "$USER" = "root" ]; then
     USRCOL="\[\033[0;31m\]"
     USRPROMPTSIGN="\[\033[0;31m\]#"
 else
-    USRCOL="\[\033[0;90m\]"
-    USRPROMPTSIGN="\[\033[0;90m\]$"
+    # Green
+    USRCOL="\[\033[0;32m\]"
+    USRPROMPTSIGN="\[\033[0;32m\]>"
+    # Grey
+    #USRCOL="\[\033[0;90m\]"
+    #USRPROMPTSIGN="\[\033[0;90m\]$"
 fi
 
 # Green
