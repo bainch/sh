@@ -62,7 +62,11 @@ eval "`dircolors`"
 alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -l'
 alias l='ls $LS_OPTIONS -lA'
-alias ssh='ssh -A'
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
+
+# Other useful aliases
+alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias cpuinfo='sysctl -n machdep.cpu.brand_string'
+alias ssh='ssh -A'
