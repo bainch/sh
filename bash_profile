@@ -50,7 +50,7 @@ else
 fi
 
 # Green
-PROMPT_COMMAND='prompt_command; RES=$?; [[ ${RES} -eq 0 ]] && RCCOL=32 || RCCOL=31 ;PS1=`echo -ne "${status_style}${fill} \t\n${USRCOL}\u\[\033[0m\]@\[\033[0;32m\]\h\[\033[0m\]:\[\033[1;34m\]\w\[\033[0m\][\[\033[0;${RCCOL}m\]${RES}\[\033[0m\]]${USRPROMPTSIGN} \[\033[0m\]"`'
+PROMPT_COMMAND='RES=$?; [[ ${RES} -eq 0 ]] && RCCOL=32 || RCCOL=31 ;PS1=`echo -ne "${status_style}${fill} \t\n${USRCOL}\u\[\033[0m\]@\[\033[0;32m\]\h\[\033[0m\]:\[\033[1;34m\]\w\[\033[0m\][\[\033[0;${RCCOL}m\]${RES}\[\033[0m\]]${USRPROMPTSIGN} \[\033[0m\]"`'
 
 # Grey
 #PROMPT_COMMAND='RES=$?; [[ ${RES} -eq 0 ]] && RCCOL=32 || RCCOL=31 ;PS1=`echo -ne "${USRCOL}\u\[\033[0m\]@\[\033[0;90m\]\h\[\033[0m\]:\[\033[1;34m\]\w\[\033[0m\][\[\033[0;${RCCOL}m\]${RES}\[\033[0m\]]${USRPROMPTSIGN} \[\033[0m\]"`'
