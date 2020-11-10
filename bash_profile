@@ -58,6 +58,10 @@ eval "`dircolors`"
 alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -l'
 alias l='ls $LS_OPTIONS -lA'
+alias grep='grep --color=auto'                                                                                           
+alias fgrep='fgrep --color=auto'                                                                                         
+alias egrep='egrep --color=auto'
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
